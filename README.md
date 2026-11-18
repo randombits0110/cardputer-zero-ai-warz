@@ -27,7 +27,7 @@
 
 Check [GitHub Releases](https://github.com/randombits0110/cardputer-zero-ai-warz/releases) for a prebuilt CardputerZero package, or see [Building from source](#building-from-source). Locally built packages are written to `dist/`.
 
-### Per-user installation
+### Per-user installation - not recommended. No launcher icon, etc.
 
 Copy the ARM64 `.deb` and `install-ai-wars-user.sh` to the device. Run the installer as your regular CardputerZero user, using the downloaded package filename.
 
@@ -40,7 +40,7 @@ The installer registers a desktop shortcut with an **Uninstall AI Wars** action 
 
 The game uses the firmware's shared libraries and the account's existing display and keyboard permissions. To uninstall, run `~/.local/bin/ai-wars-uninstall`. Saves, highscores, and screenshots remain in the player's existing directories.
 
-### System-wide installation
+### System-wide installation - recommended installation method
 
 Install the ARM64 package through APT to register **AI Wars** in stock APPLaunch.
 
