@@ -1,0 +1,226 @@
+{
+  "version": 2,
+  "rules": {
+    "days": 30,
+    "start_city": "silicon-valley",
+    "starting_cash": 3000,
+    "starting_jacket": "Black Leather Jacket",
+    "starting_capacity": 100,
+    "guaranteed_opening_good": "npu",
+    "final_buyout_percent_of_market": 70
+  },
+  "price_news_skew": {
+    "early_days": 10,
+    "minimum_price_threshold": 4000,
+    "bonus_percent": 15
+  },
+  "goods": [
+    {"id": "gpu", "name": "Consumer GPUs", "short_name": "GPUs", "slots": 1, "price": {"min": 3000, "max": 25000}, "family": [
+      {"text": "Your brother takes {qty} GPUs to render a wedding video in 8K. It was filmed on a flip phone.", "image": "gpu-01-wedding-video.png"},
+      {"text": "Your dad installs {qty} GPUs for Microsoft Flight Simulator. He flies exclusively over his own driveway.", "image": "gpu-02-driveway-flight.png"}
+    ]},
+    {"id": "npu", "name": "Neural Processing Units", "short_name": "NPUs", "slots": 1, "price": {"min": 18, "max": 85}, "family": [
+      {"text": "Your kid takes {qty} NPUs for a smart toaster. It now refuses to make anything but artisan sourdough.", "image": "npu-01-sourdough-toaster.png"},
+      {"text": "Your cousin takes {qty} NPUs to make a smart mirror. Its only inference is 'go back to bed.'", "image": "npu-02-smart-mirror.png"}
+    ]},
+    {"id": "tpu", "name": "Tensor Processing Units", "short_name": "TPUs", "slots": 1, "price": {"min": 2100, "max": 6400}, "family": [
+      {"text": "Your sister takes {qty} TPUs to run a TensorFlow plant classifier. It has diagnosed every houseplant as a salad.", "image": "tpu-01-houseplant-salad.png"},
+      {"text": "Your aunt takes {qty} TPUs for a recipe model. It keeps suggesting that she preheat the tensor.", "image": "tpu-02-preheat-the-tensor.png"}
+    ]},
+    {"id": "hbm", "name": "High Bandwidth Memory", "short_name": "HBM", "slots": 1, "price": {"min": 50, "max": 850}, "family": [
+      {"text": "Your mom takes {qty} stacks of HBM for her old laptop. It still spends four minutes booting into a coupon toolbar.", "image": "hbm-01-coupon-toolbar.png"},
+      {"text": "Your cousin borrows {qty} HBM stacks for a robot vacuum. It remembers every crumb but keeps eating socks.", "image": "hbm-02-sock-eating-vacuum.png"}
+    ]},
+    {"id": "h100", "name": "H100s", "short_name": "H100s", "slots": 1, "price": {"min": 25000, "max": 55000}, "family": [
+      {"text": "Your uncle takes {qty} H100s to predict hockey. The model says the Leafs will win the Cup. Nobody trusts the validation set.", "image": "h100-01-leafs-prediction.png"},
+      {"text": "Your dad puts {qty} H100s in a home assistant. It has the power budget of an office and the manners of a teenager.", "image": "h100-02-sassy-home-assistant.png"}
+    ]},
+    {"id": "cardputer", "name": "Cardputer Zero", "short_name": "Cardputer", "slots": 1, "price": {"min": 110, "max": 440}, "family": [
+      {"text": "Your niece takes {qty} Cardputer Zeros to lora chat friends at camp. Everyone now communicates in shell commands.", "image": "cardputer-01-camp-shell-chat.png"},
+      {"text": "Your daughter takes {qty} Cardputer Zeros for a scavenger hunt. The first clue is finding the underscore key.", "image": "cardputer-02-underscore-hunt.png"}
+    ]},
+    {"id": "cpu", "name": "CPUs", "short_name": "CPUs", "slots": 1, "price": {"min": 1000, "max": 10000}, "family": [
+      {"text": "Your cousin takes {qty} CPUs for a home server. Its busiest thread is a cron job that orders more CPUs.", "image": "cpu-01-cpu-order-loop.png"},
+      {"text": "Your aunt swipes {qty} CPUs for a bookkeeping rig. She still does the actual math on an adding machine.", "image": "cpu-02-adding-machine.png"}
+    ]},
+    {"id": "vram", "name": "VRAM Modules", "short_name": "VRAM", "slots": 1, "price": {"min": 50, "max": 850}, "family": [
+      {"text": "Your nephew swipes {qty} VRAM modules to load ultra textures. He plays on a 720p monitor.", "image": "vram-01-ultra-textures-720p.png"},
+      {"text": "Your daughter takes {qty} VRAM modules to render a virtual hamster. Its individual whiskers have individual whiskers.", "image": "vram-02-hamster-whiskers.png"}
+    ]},
+    {"id": "chiplet", "name": "Chiplets", "short_name": "Chiplets", "slots": 1, "price": {"min": 76, "max": 1000}, "family": [
+      {"text": "Your son takes {qty} chiplets for a Lego build. He calls the bricks an advanced packaging substrate.", "image": "chiplet-01-building-bricks.png"},
+      {"text": "Your dad pockets {qty} chiplets for a desktop upgrade. He asks which end of the USB cable takes bare silicon.", "image": "chiplet-02-usb-silicon.png"}
+    ]},
+    {"id": "b200", "name": "B200s", "short_name": "B200s", "slots": 1, "price": {"min": 40000, "max": 150000}, "family": [
+      {"text": "Your dad takes {qty} B200s to run DeepSeek. He says he'll give them back after downloading the internet.", "image": "b200-01-download-the-internet.png"},
+      {"text": "Your cousin puts {qty} B200s on a model leaderboard. The first thing he benchmarks is his new electrical panel.", "image": "b200-02-electrical-benchmark.png"}
+    ]},
+    {"id": "asic", "name": "AI ASICs", "short_name": "AI ASICs", "slots": 1, "price": {"min": 300, "max": 6000}, "family": [
+      {"text": "Your cousin takes {qty} AI ASICs to save power on inference. He leaves his rack fans at full blast for ambience.", "image": "asic-01-fan-ambience.png"},
+      {"text": "Your dad borrows {qty} AI ASICs for a security camera. They detect packages with exceptional efficiency and ignore the porch thief.", "image": "asic-02-porch-camera.png"}
+    ]},
+    {"id": "fabric", "name": "Neural Fabric", "short_name": "Neural Fab", "slots": 1, "price": {"min": 3500, "max": 44500}, "family": [
+      {"text": "Your brother uses {qty} units of neural fabric to fix his gaming lag. He's still playing on hotel Wi-Fi.", "image": "fabric-01-hotel-wifi.png"},
+      {"text": "Your partner takes {qty} neural fabric units to wire the house. The thermostat now negotiates with the fridge at line rate.", "image": "fabric-02-thermostat-fridge.png"}
+    ]},
+    {"id": "optical", "name": "Optical Transceivers", "short_name": "Optics", "slots": 1, "price": {"min": 800, "max": 8800}, "family": [
+      {"text": "Your sister uses {qty} optical transceivers to link her streaming PC. Her ISP still caps uploads at ten megabits.", "image": "optical-01-stream-upload.png"},
+      {"text": "Your cousin takes {qty} optical transceivers to wire his apartment. They cost more than the security deposit he drilled through.", "image": "optical-02-apartment-wall.png"}
+    ]},
+    {"id": "storage", "name": "Petabyte Storage Pods", "short_name": "PB Storage", "slots": 1, "price": {"min": 35000, "max": 125000}, "family": [
+      {"text": "Your uncle borrows {qty} storage pods to archive his VHS tapes. He saves every frame as an uncompressed TIFF.", "image": "storage-01-vhs-archive.png"},
+      {"text": "Your grandma fills {qty} storage pods with genealogy scans. She keeps the only copy of the index in a shoebox.", "image": "storage-02-shoebox-index.png"}
+    ]},
+    {"id": "reddit", "name": "Scraped Reddit Training Data", "short_name": "Reddit Data", "slots": 1, "price": {"min": 500, "max": 6000}, "family": [
+      {"text": "Your teenager feeds {qty} Reddit datasets to a chatbot. Every answer starts with 'Actually, you're wrong.'", "image": "reddit-01-actually-wrong.png"},
+      {"text": "Your aunt nabs {qty} Reddit datasets for a recipe bot. Every recipe starts with an argument about cast iron.", "image": "reddit-02-cast-iron-argument.png"}
+    ]},
+    {"id": "crypto", "name": "AI Crypto", "short_name": "AI Crypto", "slots": 1, "price": {"min": 50, "max": 2500}, "family": [
+      {"text": "Your dad gives {qty} AI tokens to his bowling league. It turns out the vending machine still takes quarters.", "image": "crypto-01-bowling-quarters.png"},
+      {"text": "Your nephew takes {qty} AI tokens to teach a bot about finance. It learns to announce a token presale.", "image": "crypto-02-token-presale.png"}
+    ]},
+    {"id": "fab", "name": "Fab Materials", "short_name": "Fab Mat.", "slots": 1, "price": {"min": 90, "max": 450}, "family": [
+      {"text": "Your mom takes {qty} silicon wafers for serving plates. The cheese course now requires cleanroom gloves.", "image": "fab-01-wafer-cheese-plate.png"},
+      {"text": "Your brother takes {qty} lots of fab materials for garage chipmaking. The cleanroom is also where he sands drywall.", "image": "fab-02-drywall-cleanroom.png"}
+    ]},
+    {"id": "weights", "name": "Proprietary Model Weights", "short_name": "Model Wts", "slots": 1, "price": {"min": 700, "max": 2800}, "family": [
+      {"text": "Your cousin grabs {qty} proprietary weight bundles to run a local assistant. He names it Offline and gives it his cloud password.", "image": "weights-01-offline-password.png"},
+      {"text": "Your brother tries to merge {qty} model checkpoints. The result speaks fluent YAML and refuses to answer questions.", "image": "weights-02-yaml-merge.png"}
+    ]},
+    {"id": "agi", "name": "AGI Futures", "short_name": "AGI Futures", "slots": 1, "price": {"min": 35, "max": 240}, "family": [
+      {"text": "Your aunt buys party supplies with {qty} AGI futures. The balloons are contingent on a breakthrough in reasoning.", "image": "agi-01-contingent-balloons.png"},
+      {"text": "Your brother trades {qty} AGI futures for a promise to automate laundry. The dryer is still waiting for general intelligence.", "image": "agi-02-laundry-automation.png"}
+    ]}
+  ],
+  "cities": [
+    {"id": "silicon-valley", "name": "Silicon Valley", "hint": "Cheap GPUs and NPUs", "price_percent": {"gpu": 73, "npu": 79, "weights": 83}},
+    {"id": "toronto", "name": "Toronto", "hint": "HBM buyers and cheap VRAM", "price_percent": {"hbm": 144, "asic": 130, "vram": 76, "storage": 82}},
+    {"id": "london", "name": "London", "hint": "Data and crypto desk", "price_percent": {"reddit": 80, "crypto": 84, "weights": 115, "tpu": 131}},
+    {"id": "new-york", "name": "New York City", "hint": "Premium bids for scarce compute", "price_percent": {"tpu": 152, "h100": 144, "b200": 147, "agi": 125}},
+    {"id": "beijing", "name": "Beijing", "hint": "TPU and ASIC buyers", "price_percent": {"tpu": 142, "asic": 157, "fab": 74}},
+    {"id": "montreal", "name": "Montreal", "hint": "Cheap storage and data", "price_percent": {"storage": 66, "reddit": 73, "fabric": 128, "gpu": 124}},
+    {"id": "paris", "name": "Paris", "hint": "HBM and optical buyers", "price_percent": {"hbm": 150, "optical": 154, "weights": 126}},
+    {"id": "shenzhen", "name": "Shenzhen", "hint": "Cheap chiplets and optics", "price_percent": {"chiplet": 65, "npu": 70, "optical": 67, "h100": 125, "b200": 132}}
+  ],
+  "market_wide_news": {
+    "chance_basis_points": 500,
+    "up": [
+      {"title":"AI GOLD RUSH!","text":"Every corporation on Earth just announced plans to achieve AGI by Friday. Investors are buying anything with a circuit board."},
+      {"title":"SILICON FEVER!","text":"AI companies have begun buying each other's supplies in an infinite bidding war. Economists describe the situation as \"deeply stupid, but profitable.\""},
+      {"title":"FOMO PANDEMIC!","text":"A viral post claims AI will replace humanity by Tuesday. Every tech commodity is skyrocketing. Humanity remains suspiciously unconcerned."},
+      {"title":"RAM ALTMAN SPEAKS!","text":"After announcing that \"compute is the new oxygen,\" global tech markets explode. Breathing is now a subscription service."},
+      {"title":"THE GREAT AI ARMS RACE!","text":"Governments worldwide are stockpiling everything with a processor. Even smart toasters are trading at record highs."},
+      {"title":"MONEY PRINTER GO BRRR!","text":"Central banks announce unlimited funding for AI development. Commodity prices soar as financial responsibility becomes obsolete."},
+      {"title":"SKYNET IPO ANNOUNCED!","text":"A mysterious AI announces plans to go public. Investors immediately mortgage their children to buy anything remotely technological."},
+      {"title":"CORPORATE PANIC BUYING!","text":"Every major tech CEO claims to be \"six months from AGI.\" Supply prices explode. Nobody asks why they've been saying that for six years."}
+    ],
+    "down": [
+      {"title":"AI BUBBLE BURSTS!","text":"Investors discover that adding \"AI-powered\" to a product doesn't actually make it useful. Global tech markets implode."},
+      {"title":"THE GREAT UNPLUGGING!","text":"A worldwide AI outage forces people to think for themselves. Productivity plummets, and every technology commodity crashes."},
+      {"title":"RAM ALTMAN SNEEZES!","text":"Wall Street interprets it as a warning about AI profitability. Every commodity crashes before he can say \"excuse me.\""},
+      {"title":"AGI ACHIEVED!","text":"Scientists unveil the world's first superintelligence. Its first recommendation? Stop wasting money on AI. Markets collapse."},
+      {"title":"THE BIG SHORT CIRCUIT!","text":"A leaked report reveals that 94% of AI startups are just ChatGPT wrappers. Investors flee faster than unpaid interns."},
+      {"title":"GLOBAL TECH MELTDOWN!","text":"Every major AI company announces record losses. Executives reassure shareholders that bankruptcy is merely \"negative growth.\""},
+      {"title":"OPEN SOURCE APOCALYPSE!","text":"A teenager releases a free AI model that outperforms billion-dollar systems. Every tech commodity crashes. Venture capitalists begin crying."},
+      {"title":"THE GREAT AI RECALL!","text":"Researchers discover that most AI systems have been confidently making things up. Markets collapse as executives realize they've been doing the same thing."}
+    ]
+  },
+  "news": [
+    {"id":"gpu-1","good":"gpu","direction":"up","weight":1,"headline":"A new image model needs six consumer GPUs to draw one cat. It still has seven paws."},
+    {"id":"gpu-2","good":"gpu","direction":"down","weight":1,"headline":"Crypto miners discover electricity bills. Their GPUs arrive on eBay marked 'lightly screamed at.'"},
+    {"id":"gpu-3","good":"gpu","direction":"up","weight":1,"headline":"Investors declare consumer GPUs the new gold. Gold investors ask where to plug in the power cable."},
+    {"id":"gpu-4","good":"gpu","direction":"down","weight":1,"headline":"A new GPU generation lands. Yesterday's flagship now qualifies for a museum discount."},
+    {"id":"gpu-5","good":"gpu","direction":"up","weight":1,"headline":"Every indie AI lab wants a local training rig. The gaming aisle is now a data centre waiting room."},
+    {"id":"npu-1","good":"npu","direction":"up","weight":1,"headline":"Laptop makers mandate NPUs. A spokesperson promises to find out what they do next quarter."},
+    {"id":"npu-2","good":"npu","direction":"down","weight":1,"headline":"An NPU takes three minutes to summarize Hello World. The summary is 'Hello.'"},
+    {"id":"npu-3","good":"npu","direction":"up","weight":1,"headline":"Privacy campaigners push for offline assistants. NPUs finally have a job their owners asked for."},
+    {"id":"npu-4","good":"npu","direction":"down","weight":1,"headline":"An OS update sends AI features back to the cloud. Laptop NPUs return to decorative silicon duty."},
+    {"id":"npu-5","good":"npu","direction":"up","weight":1,"headline":"Corporate IT mandates NPU laptops. The approved AI workload is still a 14-year-old Excel macro."},
+    {"id":"tpu-1","good":"tpu","direction":"up","weight":1,"headline":"A cloud lab reserves an entire TPU pod for matrix math. The spreadsheet team asks if it can borrow a row."},
+    {"id":"tpu-2","good":"tpu","direction":"down","weight":1,"headline":"A model compiler finally runs on ordinary GPUs. TPU reservations vanish faster than the migration guide."},
+    {"id":"tpu-3","good":"tpu","direction":"up","weight":1,"headline":"A new TensorFlow benchmark loves TPUs. The benchmark authors also happen to rent TPUs."},
+    {"id":"tpu-4","good":"tpu","direction":"down","weight":1,"headline":"A cloud region dumps old TPUs after a pod upgrade. Each pallet comes with a mandatory compiler tutorial."},
+    {"id":"tpu-5","good":"tpu","direction":"up","weight":1,"headline":"A giant transformer trains efficiently on TPUs. Suddenly every lab calls its matrix multiply 'strategic.'"},
+    {"id":"hbm-1","good":"hbm","direction":"up","weight":1,"headline":"An AI lab bids for all the HBM on Earth. Analysts suspect the next model is God with a context window."},
+    {"id":"hbm-2","good":"hbm","direction":"up","weight":1,"headline":"A new model needs 4 TB of HBM to tell the time. Its answer is 'approximately.'"},
+    {"id":"hbm-3","good":"hbm","direction":"down","weight":1,"headline":"Memory makers ramp HBM output. Scarcity enthusiasts request a recall on the good news."},
+    {"id":"hbm-4","good":"hbm","direction":"up","weight":1,"headline":"Next-gen accelerators stack enough HBM to bankrupt a small country. The spec sheet calls it a footnote."},
+    {"id":"hbm-5","good":"hbm","direction":"down","weight":1,"headline":"A memory-saving breakthrough slashes HBM demand. Hardware executives demand a recount."},
+    {"id":"h100-1","good":"h100","direction":"up","weight":1,"headline":"Export controls make H100s harder to get than concert tickets. At least the scalpers know the form."},
+    {"id":"h100-2","good":"h100","direction":"down","weight":1,"headline":"A newer accelerator ships. H100 owners start putting 'collector grade' in their listings."},
+    {"id":"h100-3","good":"h100","direction":"up","weight":1,"headline":"A production model still needs H100s. Its biggest customer is the team writing its own replacement."},
+    {"id":"h100-4","good":"h100","direction":"up","weight":1,"headline":"A data centre expansion snaps up the last H100s. The building permit lists 'autocomplete' as the occupant."},
+    {"id":"h100-5","good":"h100","direction":"down","weight":1,"headline":"New H100 rental capacity sends rates tumbling. Owning one now comes with complimentary buyer's remorse."},
+    {"id":"cardputer-1","good":"cardputer","direction":"up","weight":1,"headline":"A pocket Linux terminal goes viral. Cardputer Zero buyers apparently already own six keyboards."},
+    {"id":"cardputer-2","good":"cardputer","direction":"down","weight":1,"headline":"A fresh Cardputer Zero batch lands. Resellers pivot from 'rare dev kit' to 'shipping included.'"},
+    {"id":"cardputer-3","good":"cardputer","direction":"up","weight":1,"headline":"A tiny terminal contest puts Cardputer Zero in every project photo. The keyboards look enormous beside the trophies."},
+    {"id":"cardputer-4","good":"cardputer","direction":"down","weight":1,"headline":"A rival handheld ships with a bigger display. Cardputer Zero owners can now read the resale prices."},
+    {"id":"cardputer-5","good":"cardputer","direction":"up","weight":1,"headline":"A maker ports a retro game to Cardputer Zero. Thousands buy one to avoid finishing their own ports."},
+    {"id":"cpu-1","good":"cpu","direction":"up","weight":1,"headline":"Scientists rediscover that computers contain CPUs. The CPUs ask why this wasn't in the press release."},
+    {"id":"cpu-2","good":"cpu","direction":"down","weight":1,"headline":"An AI lab replaces 400 servers with a GPU cluster. The CPUs get reassigned to expense reports."},
+    {"id":"cpu-3","good":"cpu","direction":"up","weight":1,"headline":"Enterprise inference moves back to CPUs. Vendors swear it was on the roadmap all along."},
+    {"id":"cpu-4","good":"cpu","direction":"down","weight":1,"headline":"A new AI-branded CPU benchmarks like the old one. The sticker, however, is 40% faster."},
+    {"id":"cpu-5","good":"cpu","direction":"up","weight":1,"headline":"A chiplet shortage slows server CPU shipments. Buyers discover 'two sockets' means two waiting lists."},
+    {"id":"vram-1","good":"vram","direction":"up","weight":1,"headline":"Local image generation eats VRAM. GPU owners discover their eight gigabytes are actually an entry fee."},
+    {"id":"vram-2","good":"vram","direction":"down","weight":1,"headline":"A GDDR supply glut hits VRAM module prices. The board vendors still call sixteen gigs 'premium.'"},
+    {"id":"vram-3","good":"vram","direction":"up","weight":1,"headline":"A texture pack demands another 12 GB of VRAM. The game's original box art had three colours."},
+    {"id":"vram-4","good":"vram","direction":"down","weight":1,"headline":"Quantized image models squeeze into less VRAM. Memory sales forecasts now fit on one Post-it."},
+    {"id":"vram-5","good":"vram","direction":"up","weight":1,"headline":"A graphics card vendor doubles its VRAM spec after reviews. It calls the original model a limited edition."},
+    {"id":"chiplet-1","good":"chiplet","direction":"up","weight":1,"headline":"Chiplet packaging capacity sells out. The chip is modular, but apparently the waiting list isn't."},
+    {"id":"chiplet-2","good":"chiplet","direction":"down","weight":1,"headline":"A new die-to-die standard makes chiplets interchangeable. Proprietary connector vendors ask for a recount."},
+    {"id":"chiplet-3","good":"chiplet","direction":"up","weight":1,"headline":"A server CPU adds more compute chiplets. Marketing calls the empty space between them 'AI adjacency.'"},
+    {"id":"chiplet-4","good":"chiplet","direction":"down","weight":1,"headline":"An advanced packaging yield breakthrough floods the market with chiplets. The defect bins feel neglected."},
+    {"id":"chiplet-5","good":"chiplet","direction":"up","weight":1,"headline":"A foundry splits a massive die into chiplets. Somehow the invoice is still one indivisible number."},
+    {"id":"b200-1","good":"b200","direction":"up","weight":1,"headline":"An AI lab orders enough B200s to heat a Canadian city. City council asks if winter support is included."},
+    {"id":"b200-2","good":"b200","direction":"down","weight":1,"headline":"Cooling delays stall B200 installations. Data centre operators consider building the next rack in a rink."},
+    {"id":"b200-3","good":"b200","direction":"up","weight":1,"headline":"A reasoning model sends B200 demand soaring. NVIDIA executives start comparing yacht benchmarks."},
+    {"id":"b200-4","good":"b200","direction":"down","weight":1,"headline":"A next-gen roadmap leaks. B200 owners experience buyer's remorse before delivery."},
+    {"id":"b200-5","good":"b200","direction":"up","weight":1,"headline":"One hyperscaler reserves the next B200 shipment. Independent researchers begin bargaining with destiny."},
+    {"id":"asic-1","good":"asic","direction":"up","weight":1,"headline":"A giant inference service orders custom AI ASICs. The chip's only other mode is 'off.'"},
+    {"id":"asic-2","good":"asic","direction":"down","weight":1,"headline":"A model update needs an operation the AI ASIC can't run. Its resale listing calls that 'focus.'"},
+    {"id":"asic-3","good":"asic","direction":"up","weight":1,"headline":"Power budgets tighten. Efficient inference ASICs get the contracts, and GPUs get an intervention."},
+    {"id":"asic-4","good":"asic","direction":"down","weight":1,"headline":"A vendor cancels its AI accelerator platform. Pallets of ASICs come with a lifetime supply of old drivers."},
+    {"id":"asic-5","good":"asic","direction":"up","weight":1,"headline":"A custom inference ASIC beats GPUs on tokens per watt. The demo kindly declines to discuss training."},
+    {"id":"fabric-1","good":"fabric","direction":"up","weight":1,"headline":"A training cluster hits a network bottleneck. Its GPUs spent the week waiting for packets."},
+    {"id":"fabric-2","good":"fabric","direction":"down","weight":1,"headline":"An interconnect firmware update turns a neural fabric into an expensive LAN party."},
+    {"id":"fabric-3","good":"fabric","direction":"up","weight":1,"headline":"A hyperscaler rebuilds its AI fabric. Somehow the cable ties account for half the budget."},
+    {"id":"fabric-4","good":"fabric","direction":"down","weight":1,"headline":"An open standard challenges proprietary neural fabrics. Vendors file a bug against competition."},
+    {"id":"fabric-5","good":"fabric","direction":"up","weight":1,"headline":"A distributed training breakthrough needs twice the fabric bandwidth. Network engineers request vacation."},
+    {"id":"optical-1","good":"optical","direction":"up","weight":1,"headline":"Data centres roll out 800G optics. Engineers start measuring lead times in generations of fiber."},
+    {"id":"optical-2","good":"optical","direction":"down","weight":1,"headline":"Co-packaged optics threaten pluggable transceivers. Vendors rebrand the old modules as 'serviceable.'"},
+    {"id":"optical-3","good":"optical","direction":"up","weight":1,"headline":"A supplier runs short of laser diodes. The optical-transceiver roadmap is temporarily in the dark."},
+    {"id":"optical-4","good":"optical","direction":"down","weight":1,"headline":"A standards update lets cheap optics pass validation. The vendor-approved modules demand a retest."},
+    {"id":"optical-5","good":"optical","direction":"up","weight":1,"headline":"A city-scale AI cluster orders long-reach transceivers. Its procurement team can see the quote from orbit."},
+    {"id":"storage-1","good":"storage","direction":"up","weight":1,"headline":"A training set ingests 47 million lunch photos. Petabyte storage orders include a side of fries."},
+    {"id":"storage-2","good":"storage","direction":"down","weight":1,"headline":"A cloud provider finds three warehouses of unused storage pods. Its inventory system ran out of disk space."},
+    {"id":"storage-3","good":"storage","direction":"up","weight":1,"headline":"Researchers refuse to delete old checkpoints. Each petabyte pod is marked 'final-final-v2.'"},
+    {"id":"storage-4","good":"storage","direction":"down","weight":1,"headline":"Dataset deduplication frees enough rack storage to cancel a purchase order. One cat video survives."},
+    {"id":"storage-5","good":"storage","direction":"up","weight":1,"headline":"A lab buys petabyte pods to retain every AI chat. Its compliance team describes this as forgetting responsibly."},
+    {"id":"reddit-1","good":"reddit","direction":"up","weight":1,"headline":"Reddit tightens API access. The price of a Star Wars argument is now a licensing negotiation."},
+    {"id":"reddit-2","good":"reddit","direction":"down","weight":1,"headline":"A Reddit corpus audit finds confidently wrong advice. The auditors get downvoted for citing sources."},
+    {"id":"reddit-3","good":"reddit","direction":"up","weight":1,"headline":"Labs bid for fresh Reddit conversations. Volunteer moderators demand hazard pay."},
+    {"id":"reddit-4","good":"reddit","direction":"down","weight":1,"headline":"Synthetic training data catches on. Human arguments temporarily lose market share."},
+    {"id":"reddit-5","good":"reddit","direction":"up","weight":1,"headline":"A Reddit-trained model sets a benchmark for passive aggression. Enterprise clients describe it as candid."},
+    {"id":"crypto-1","good":"crypto","direction":"up","weight":1,"headline":"An AI coin promises to replace money, banking, and arithmetic. The token supply is 'ask the bot.'"},
+    {"id":"crypto-2","good":"crypto","direction":"down","weight":1,"headline":"An AI token founder vanishes with the treasury. The farewell note thanks everyone for the prompt."},
+    {"id":"crypto-3","good":"crypto","direction":"up","weight":1,"headline":"An influencer guarantees his AI coin will reach the moon. Astronomers decline to confirm the listing."},
+    {"id":"crypto-4","good":"crypto","direction":"down","weight":1,"headline":"Regulators ask what an AI token actually does. The developers schedule six more months of discovery."},
+    {"id":"crypto-5","good":"crypto","direction":"down","weight":1,"headline":"An AI trading bot discovers it has spent three weeks buying its own tokens. It awards itself market maker of the year."},
+    {"id":"fab-1","good":"fab","direction":"up","weight":1,"headline":"An earthquake disrupts wafer output. Chip buyers briefly consider learning patience."},
+    {"id":"fab-2","good":"fab","direction":"down","weight":1,"headline":"A foundry posts record yields. Fab-material traders are furious that the process works."},
+    {"id":"fab-3","good":"fab","direction":"up","weight":1,"headline":"Lithography expansion sends demand for high-purity fab materials soaring. Even the dust needs a reservation."},
+    {"id":"fab-4","good":"fab","direction":"down","weight":1,"headline":"A new wafer plant opens ahead of schedule. Speculators ask whether that's even allowed."},
+    {"id":"fab-5","good":"fab","direction":"up","weight":1,"headline":"Export restrictions hit chipmaking materials. Purified silicon suddenly gets its own foreign policy desk."},
+    {"id":"weights-1","good":"weights","direction":"up","weight":1,"headline":"A private fine-tune beats the big labs on code. The price of its weights now includes a startup valuation."},
+    {"id":"weights-2","good":"weights","direction":"down","weight":1,"headline":"An open-weights model beats a proprietary rival. The rival announces a new benchmark."},
+    {"id":"weights-3","good":"weights","direction":"up","weight":1,"headline":"An AI licensing deal locks up a popular checkpoint. The tensors are now sold by people in suits."},
+    {"id":"weights-4","good":"weights","direction":"down","weight":1,"headline":"A major model vendor publishes its weights. The old download link still asks for a sales call."},
+    {"id":"weights-5","good":"weights","direction":"up","weight":1,"headline":"A local inference runtime makes a prized checkpoint run offline. Its former API team discovers withholding."},
+    {"id":"agi-1","good":"agi","direction":"up","weight":1,"headline":"A lab declares AGI on its own benchmark. Futures spike before anyone opens the benchmark spreadsheet."},
+    {"id":"agi-2","good":"agi","direction":"down","weight":1,"headline":"An AGI demo turns out to be a room full of contractors. The futures desk calls it human-in-the-loop."},
+    {"id":"agi-3","good":"agi","direction":"up","weight":1,"headline":"A prediction market moves its AGI date forward. The people making the bets also define 'general.'"},
+    {"id":"agi-4","good":"agi","direction":"down","weight":1,"headline":"A benchmark audit finds the answers in the training set. AGI futures are suddenly graded on a curve."},
+    {"id":"agi-5","good":"agi","direction":"up","weight":1,"headline":"An AI lab adds 'AGI' to a funding slide. The futures market has seen enough evidence."}
+  ],
+  "jackets": []
+}

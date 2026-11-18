@@ -1,0 +1,194 @@
+{
+  "prepared": "2026-11-18",
+  "files": [
+    {
+      "file": "Brotli-MIT.txt",
+      "bytes": 1084,
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94",
+      "source": "https://github.com/google/brotli (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "CardputerZero-Template-MIT.txt",
+      "bytes": 1109,
+      "sha256": "7a7f1879a22ed8a1436e61e2db16da934b74dd61d1105d6ae82746dab30bfddb",
+      "source": "https://github.com/CardputerZero/Template/blob/477fa6d217b683e3084c361a757f03dc8ca9f753/LICENSE",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "FontAwesome5-LICENSE.txt",
+      "bytes": 7592,
+      "sha256": "fffde556931e5fe5b84e3e4548d3cabfd0fde8c1bdb5af8fb4eb027249d2e721",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/scripts/built_in_font/font_license/FontAwesome5/LICENSE.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "FreeType-FTL.txt",
+      "bytes": 6890,
+      "sha256": "04671667217076044de2ea05a86f0e2c362acc8914506d49a400735ee1597b80",
+      "source": "https://github.com/freetype/freetype/blob/VER-2-14-3/docs/FTL.TXT",
+      "method": "verbatim FTL text extracted from upstream package copyright collection; LF text"
+    },
+    {
+      "file": "FreeType-Windows-Licenses.txt",
+      "bytes": 27496,
+      "sha256": "cf82ed29473c1fd8e137fd34250f89eebf2bee9e126fa004286dd25495d5c654",
+      "source": "https://github.com/freetype/freetype/tree/VER-2-14-3 (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "Intro-Music-MIT.txt",
+      "bytes": 1107,
+      "sha256": "f69c3dc34bce44c3baef6bfcef704133151bc637537608bc5b6358df6c93c99a",
+      "source": "project:assets/audio/intro-LICENSE.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "LVGL-MIT.txt",
+      "bytes": 1080,
+      "sha256": "c4982e934b945ff2c19f915fe5191467ca6af9bc1b5106829cd95659a6e3c079",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/LICENCE.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "LVGL-Printf-MIT.txt",
+      "bytes": 1158,
+      "sha256": "8bf1e31953244c1dfc6f089f2cbc90cac0718f2e712e2a05a1ae360539ea2766",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/src/stdlib/builtin/LICENSE_SPRINTF.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "LVGL-QR-Code-MIT.txt",
+      "bytes": 1133,
+      "sha256": "55bffe27c17e8dcee25f56758dbd3241ee2aac7454b36ee4b60e89c02b85a060",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/src/libs/qrcode/LICENSE.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "LVGL-TJpgDec.txt",
+      "bytes": 888,
+      "sha256": "55893357e9cd00860e4b02ab03bd653eda26effb67942a8609f7082ca62802fc",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/src/libs/tjpgd/LICENSE.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "LVGL-TLSF-BSD.txt",
+      "bytes": 1950,
+      "sha256": "9ef9c027899fa4a671cafba971ad144f428f503ff9d44271a54b36722590715d",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/src/stdlib/builtin/lv_tlsf.h",
+      "method": "verbatim full license-comment extract; LF text"
+    },
+    {
+      "file": "LVGL-ThorVG-MIT.txt",
+      "bytes": 1106,
+      "sha256": "66b184a2bf5458e470ca08500e6ee711578eac5546fa6c2a98124c502d7757f4",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/src/libs/thorvg/LICENSE.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "Microsoft-VC-Runtime-Notice.txt",
+      "bytes": 1488,
+      "sha256": "c3243fa0aa5b42309004f73688cb554a94775eee3111cb727e3b325a73cb6ea1",
+      "source": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/redistribution",
+      "method": "project-authored notice pointing to official Microsoft terms; not a license grant"
+    },
+    {
+      "file": "Montserrat-Bundled-OFL.txt",
+      "bytes": 4485,
+      "sha256": "c376dd6b498c6886fe5a43db3c48cf83ef05cac6846ec4010e535d48e43a29b0",
+      "source": "project:assets/fonts/Montserrat-OFL.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "Montserrat-LVGL-OFL.txt",
+      "bytes": 4485,
+      "sha256": "c376dd6b498c6886fe5a43db3c48cf83ef05cac6846ec4010e535d48e43a29b0",
+      "source": "https://github.com/lvgl/lvgl/blob/v9.5.0/scripts/built_in_font/font_license/Montserrat/OFL.txt",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "NSIS-COPYING.txt",
+      "bytes": 15632,
+      "sha256": "388357c1215ff403c5ebde3a5ecd273e68f8b79a579996775245d1ee65442aba",
+      "source": "https://nsis.sourceforge.io/Docs/AppendixI.html (NSIS 3.13 distribution COPYING)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "SDL2-zlib.txt",
+      "bytes": 884,
+      "sha256": "97f35b302b361680ec1e891e95d2d52097bb95abff361434916d99dc1305f127",
+      "source": "https://github.com/libsdl-org/SDL/tree/release-2.32.10 (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "bzip2-LICENSE.txt",
+      "bytes": 1896,
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+      "source": "https://sourceware.org/bzip2/ (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "fmt-MIT.txt",
+      "bytes": 1431,
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+      "source": "https://github.com/fmtlib/fmt/tree/10.1.1 (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "libjpeg-turbo-Licenses.txt",
+      "bytes": 5620,
+      "sha256": "2189dc45a8fe96204069f8124caa53a148dfdc193f50f584c6ca7849a6072872",
+      "source": "https://github.com/libjpeg-turbo/libjpeg-turbo/tree/3.1.3 (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "libjpeg-turbo-README.ijg.txt",
+      "bytes": 12799,
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6",
+      "source": "https://github.com/libjpeg-turbo/libjpeg-turbo/blob/3.1.3/README.ijg",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "libpng-CardputerZero-License.txt",
+      "bytes": 5345,
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526",
+      "source": "https://github.com/pnggroup/libpng/blob/cd952f49f95bb27154ae77dbb103032d95f6e580/LICENSE",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "libpng-Windows-License.txt",
+      "bytes": 5345,
+      "sha256": "16d9daaafbf63a31a5bdc91d4600972548fef5aaa1244202393288dbd079c49a",
+      "source": "https://github.com/pnggroup/libpng (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "miniaudio-LICENSE.txt",
+      "bytes": 2597,
+      "sha256": "457f1b500e0adf6bc059edddfa78a2f62012e7c3bb43476c20e0bd23b25ba0eb",
+      "source": "https://github.com/mackron/miniaudio/blob/0.11.26/LICENSE",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "nlohmann-json-Attributions.txt",
+      "bytes": 975,
+      "sha256": "dbff676a7685e20af4e30003ffce8a53686db319112e58310e32a79b1d0969c7",
+      "source": "https://github.com/nlohmann/json/blob/v3.12.0/single_include/nlohmann/json.hpp",
+      "method": "verbatim contributor-comment extracts with a project-authored introduction; LF text"
+    },
+    {
+      "file": "nlohmann-json-MIT.txt",
+      "bytes": 1097,
+      "sha256": "b9715282b2f1db1359a919bb3a542dd4362fd9e38ae72d421367eb11abe62eec",
+      "source": "https://github.com/nlohmann/json/blob/v3.12.0/LICENSE.MIT",
+      "method": "verbatim file copy"
+    },
+    {
+      "file": "zlib-LICENSE.txt",
+      "bytes": 1002,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+      "source": "https://zlib.net/ (upstream notices retained by vcpkg)",
+      "method": "verbatim file copy"
+    }
+  ]
+}

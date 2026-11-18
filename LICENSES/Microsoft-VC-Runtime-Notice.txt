@@ -1,0 +1,28 @@
+MICROSOFT VISUAL C++ RUNTIME NOTICE
+=================================
+
+Some Windows distributions of AI Wars include Microsoft Visual C++ runtime
+files such as msvcp140*.dll, vcruntime140*.dll, and concrt140.dll.
+
+These files are Microsoft components governed by Microsoft's applicable
+license terms. They are not relicensed under AI Wars' MIT license. This
+project-authored notice does not grant rights to redistribute them and is
+not a substitute for Microsoft's license terms.
+
+The distributor must confirm eligibility under the license for the Visual
+Studio/Build Tools product used to create and package the application.
+The official Visual Studio 2026 redistribution list permits specified
+unmodified redistributable files subject to that product's license terms.
+It excludes preview/pre-release components and debug_nonredist contents.
+Do not modify Microsoft runtime files or treat arbitrary system DLLs as
+redistributable merely because they are installed on a build machine.
+
+Official references:
+https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files
+https://learn.microsoft.com/en-us/visualstudio/releases/2026/redistribution
+https://visualstudio.microsoft.com/license-terms/
+https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+
+Keep any Microsoft-supplied notices and terms required for the exact
+redistributable being supplied. This source repository cannot establish
+the distributor's individual Microsoft licensing entitlement.

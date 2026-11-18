@@ -1,0 +1,12 @@
+# Shared notice bundle for CardputerZero and Windows distributions.
+include(GNUInstallDirs)
+get_filename_component(AI_WARS_NOTICE_ROOT "${CMAKE_CURRENT_LIST_DIR}/.." ABSOLUTE)
+
+install(FILES "${AI_WARS_NOTICE_ROOT}/THIRD_PARTY_NOTICES.txt"
+    DESTINATION "${CMAKE_INSTALL_DOCDIR}")
+install(DIRECTORY "${AI_WARS_NOTICE_ROOT}/LICENSES/"
+    DESTINATION "${CMAKE_INSTALL_DOCDIR}/LICENSES"
+    FILES_MATCHING PATTERN "*.txt" PATTERN "*.md" PATTERN "*.json")
+install(FILES "${AI_WARS_NOTICE_ROOT}/docs/LICENSING.md"
+              "${AI_WARS_NOTICE_ROOT}/docs/ASSET-LICENSING.md"
+    DESTINATION "${CMAKE_INSTALL_DOCDIR}/docs")

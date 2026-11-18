@@ -17,7 +17,7 @@
 
 | Main menu | Market and jacket in a short simulator test run |
 | :---: | :---: |
-| ![AI Wars main menu over a pixel-art city skyline](/docs/screenshots/main-menu.png) | ![Silicon Valley market quotes beside the jacket inventory](/docs/screenshots/market-and-jacket.png) |
+| ![AI Wars main menu over a pixel-art city skyline](docs/screenshots/main-menu.png) | ![Silicon Valley market quotes beside the jacket inventory](docs/screenshots/market-and-jacket.png) |
 
 ## Requirements
 
@@ -27,7 +27,7 @@
 
 Check [GitHub Releases](https://github.com/randombits0110/cardputer-zero-ai-warz/releases) for a prebuilt CardputerZero package, or see [Building from source](#building-from-source). Locally built packages are written to `dist/`.
 
-### Per-user installation - not recommended. No launcher icon, etc.
+### Per-user installation
 
 Copy the ARM64 `.deb` and `install-ai-wars-user.sh` to the device. Run the installer as your regular CardputerZero user, using the downloaded package filename.
 
@@ -40,7 +40,7 @@ The installer registers a desktop shortcut with an **Uninstall AI Wars** action 
 
 The game uses the firmware's shared libraries and the account's existing display and keyboard permissions. To uninstall, run `~/.local/bin/ai-wars-uninstall`. Saves, highscores, and screenshots remain in the player's existing directories.
 
-### System-wide installation - recommended installation method
+### System-wide installation
 
 Install the ARM64 package through APT to register **AI Wars** in stock APPLaunch.
 
