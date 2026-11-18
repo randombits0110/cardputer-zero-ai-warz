@@ -1,0 +1,144 @@
+AI WARS - THIRD-PARTY NOTICES
+============================
+Prepared: 18 November 2026
+Applies to the CardputerZero game and Windows desktop simulator.
+
+AI Wars' original code is distributed under the MIT license in LICENSE.
+Third-party code, fonts, artwork, and runtime components retain their own
+copyrights and licenses. Inclusion here does not relicense those components.
+The full notices listed below are provided in the LICENSES directory.
+
+FreeType acknowledgment
+-----------------------
+This software is based in part on the work of the FreeType Team.
+https://freetype.org/
+
+For the FreeType engine, this project elects the FreeType Project License
+(FTL) alternative, rather than the alternative GPL license. Separate notices
+for contributed FreeType components are retained in the upstream license file.
+
+Shared code and embedded data
+----------------------------
+CardputerZero application template and original Windows device-shell images
+  Copyright (c) 2026 M5Stack CardputerZero Community
+  MIT; LICENSES/CardputerZero-Template-MIT.txt
+  https://github.com/CardputerZero/Template
+
+LVGL 9.5.0
+  MIT; LICENSES/LVGL-MIT.txt
+  https://github.com/lvgl/lvgl/tree/v9.5.0
+  Its bundled components have separate notices:
+  - Nayuki QR Code generator: LICENSES/LVGL-QR-Code-MIT.txt
+  - TLSF memory allocator: LICENSES/LVGL-TLSF-BSD.txt
+  - mpaland/printf: LICENSES/LVGL-Printf-MIT.txt
+  - TJpgDec R0.03: LICENSES/LVGL-TJpgDec.txt
+  - ThorVG, if enabled: LICENSES/LVGL-ThorVG-MIT.txt
+
+nlohmann/json 3.12.0
+  MIT; LICENSES/nlohmann-json-MIT.txt
+  Embedded contributor notices: LICENSES/nlohmann-json-Attributions.txt
+  https://github.com/nlohmann/json/tree/v3.12.0
+  The vendored amalgamation identifies its embedded Hedley and UTF-8 decoder
+  sections with MIT SPDX notices. Those contributor attributions are retained.
+
+fmt 10.1.1
+  MIT with the upstream compiled-object exception retained;
+  LICENSES/fmt-MIT.txt
+  https://github.com/fmtlib/fmt/tree/10.1.1
+
+miniaudio 0.11.26
+  Upstream offers Unlicense OR MIT No Attribution (MIT-0).
+  This distribution uses the MIT-0 alternative and retains the complete
+  upstream alternatives in LICENSES/miniaudio-LICENSE.txt.
+  https://github.com/mackron/miniaudio/tree/0.11.26
+  This build also compiles its embedded dr_mp3, dr_wav, and dr_flac codecs.
+
+FreeType
+  FTL; LICENSES/FreeType-FTL.txt
+  Windows 2.14.3 package notices: LICENSES/FreeType-Windows-Licenses.txt
+  The CardputerZero system provides its own FreeType package; the default
+  build SDK contains version 2.13.3. System-package versions can differ.
+
+PNG decoding
+  libpng-2.0 license; LICENSES/libpng-Windows-License.txt and
+  LICENSES/libpng-CardputerZero-License.txt
+  https://www.libpng.org/pub/png/libpng.html
+  CardputerZero builds fetch a private libpng 1.6.59 decoder. Windows builds
+  use their configured libpng dependency. The two notices reflect the
+  corresponding source/package copies, rather than a claim that both are
+  linked into every executable.
+
+Fonts
+-----
+Montserrat Bold and Medium font files
+  Copyright 2011 The Montserrat Project Authors
+  SIL Open Font License 1.1; LICENSES/Montserrat-Bundled-OFL.txt
+  The original font notice is also retained with the font assets.
+
+Montserrat bitmap fonts built into LVGL
+  SIL Open Font License 1.1; LICENSES/Montserrat-LVGL-OFL.txt
+
+Font Awesome 5 glyphs in LVGL's built-in fonts
+  Copyright (c) 2022 Fonticons, Inc.
+  Font data: SIL Open Font License 1.1.
+  Full upstream notice: LICENSES/FontAwesome5-LICENSE.txt
+  That upstream file also describes SVG/JS icons and supporting code;
+  the embedded font glyphs are used under its font-license section.
+  https://fontawesome.com/license/free
+
+Fonts remain under their own licenses. Bundling a font does not place the
+game under the font license. Respect any Reserved Font Names when modifying
+and redistributing font software.
+
+Windows runtime dependencies
+----------------------------
+SDL2 2.32.10: zlib license; LICENSES/SDL2-zlib.txt
+  https://github.com/libsdl-org/SDL/tree/release-2.32.10
+Brotli: MIT; LICENSES/Brotli-MIT.txt
+  https://github.com/google/brotli
+bzip2: upstream bzip2 license; LICENSES/bzip2-LICENSE.txt
+  https://sourceware.org/bzip2/
+zlib: zlib license; LICENSES/zlib-LICENSE.txt
+  https://zlib.net/
+
+libjpeg-turbo is a configured build dependency; whether its code is present
+depends on the linked build. Its upstream notices are supplied for builds
+that redistribute it:
+  LICENSES/libjpeg-turbo-Licenses.txt
+  LICENSES/libjpeg-turbo-README.ijg.txt
+  This software is based in part on the work of the Independent JPEG Group.
+  https://libjpeg-turbo.org/
+
+Microsoft Visual C++ runtime files, when included, are proprietary Microsoft
+components. They are not covered by AI Wars' MIT license.
+  See LICENSES/Microsoft-VC-Runtime-Notice.txt for the official license links
+  and distribution conditions. That notice is not a Microsoft license grant.
+
+Windows installer
+-----------------
+NSIS 3.13, if used to package the Windows application
+  LICENSES/NSIS-COPYING.txt contains the upstream component licenses and
+  the special exception for its LZMA compression module. The exception
+  preserves the separate license of linked application code; it does not
+  relicense modifications to the LZMA module.
+  https://nsis.sourceforge.io/Docs/AppendixI.html
+
+Game assets and system libraries
+-------------------------------
+Intro music: assets/audio/intro.mp3
+  MIT; LICENSES/Intro-Music-MIT.txt
+
+Artwork and device-shell provenance is documented in docs/ASSET-LICENSING.md.
+Do not interpret the code license as a grant of third-party trademarks or
+endorsement rights.
+
+The CardputerZero Debian package relies on separately installed system
+libraries. It does not bundle the BSP sysroot, Linux, glibc, GCC runtime,
+ALSA, or the device's system font collection. Those packages retain their
+own notices and licenses. If a distributor adds copies of those libraries
+to a release, the distributor must include their applicable notices and
+meet any corresponding source-availability obligations.
+
+Some notices are supplied for optional dependencies so the same notice
+bundle can accompany both supported targets. Inclusion of a notice alone
+does not mean that the corresponding binary or asset is shipped.

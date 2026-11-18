@@ -1,0 +1,390 @@
+{
+  "$schema": "https://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:b7a18a64-c32b-4f58-bfc0-4cea647ee0e7",
+  "version": 3,
+  "metadata": {
+    "timestamp": "2026-11-17T15:22:20Z",
+    "lifecycles": [{ "phase": "pre-build" }],
+    "component": {
+      "type": "application",
+      "bom-ref": "ai-wars",
+      "name": "AI Wars",
+      "version": "1.0.0",
+      "description": "Offline trading strategy game for M5Stack CardputerZero (ARM64 Linux).",
+      "licenses": [{ "license": { "id": "MIT" } }],
+      "externalReferences": [
+        { "type": "vcs", "url": "https://github.com/randombits0110/cardputer-zero-ai-warz" }
+      ]
+    },
+    "properties": [
+      {
+        "name": "ai-wars:sbom:scope",
+        "value": "Source repository inventory for the default CardputerZero Release build and Debian package installation using cp0-cross-package. Covers required build inputs, compiled-in libraries, device package dependencies, and installed fonts and audio."
+      },
+      {
+        "name": "ai-wars:sbom:version-basis",
+        "value": "Versions come from source pins, vendored files, or the default v0.0.4 BSP used by cp0-cross. BSP observations are upstream versions. Device packages resolve at install time and can differ by OS image."
+      },
+      {
+        "name": "ai-wars:sbom:completeness",
+        "value": "The transitive closure of the installed device packages depends on the device image."
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "lvgl",
+      "name": "LVGL",
+      "version": "9.5.0",
+      "description": "UI library fetched by CMake at tag v9.5.0 and built into the game.",
+      "purl": "pkg:github/lvgl/lvgl@v9.5.0",
+      "licenses": [{ "license": { "id": "MIT" } }],
+      "externalReferences": [
+        { "type": "vcs", "url": "https://github.com/lvgl/lvgl/tree/85aa60d18b3d5e5588d7b247abf90198f07c8a63" }
+      ],
+      "components": [
+        {
+          "type": "library",
+          "bom-ref": "lvgl-qrcodegen",
+          "name": "Nayuki QR Code generator",
+          "description": "C implementation bundled by LVGL under src/libs/qrcode and enabled by LV_USE_QRCODE.",
+          "purl": "pkg:github/nayuki/qr-code-generator",
+          "licenses": [{ "license": { "id": "MIT" } }]
+        },
+        {
+          "type": "library",
+          "bom-ref": "lvgl-tjpgd",
+          "name": "TJpgDec",
+          "version": "R0.03",
+          "description": "ChaN's tiny JPEG decoder bundled by LVGL and enabled by LV_USE_TJPGD.",
+          "licenses": [
+            {
+              "license": {
+                "name": "TJpgDec license",
+                "url": "https://github.com/lvgl/lvgl/blob/v9.5.0/src/libs/tjpgd/LICENSE.txt"
+              }
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "bom-ref": "lvgl-tlsf",
+          "name": "TLSF",
+          "version": "3.1",
+          "description": "LVGL adaptation of Matthew Conte's allocator used by the built-in memory backend.",
+          "purl": "pkg:github/mattconte/tlsf",
+          "licenses": [{ "license": { "id": "BSD-3-Clause" } }]
+        },
+        {
+          "type": "library",
+          "bom-ref": "lvgl-printf",
+          "name": "mpaland/printf",
+          "description": "Formatting implementation bundled in LVGL's built-in sprintf backend.",
+          "purl": "pkg:github/mpaland/printf",
+          "licenses": [{ "license": { "id": "MIT" } }]
+        },
+        {
+          "type": "data",
+          "bom-ref": "lvgl-montserrat",
+          "name": "Montserrat bitmap glyphs",
+          "description": "Montserrat glyphs compiled into LVGL's enabled built-in fonts.",
+          "licenses": [
+            { "license": { "id": "OFL-1.1", "url": "https://github.com/lvgl/lvgl/blob/v9.5.0/scripts/built_in_font/font_license/Montserrat/OFL.txt" } }
+          ]
+        },
+        {
+          "type": "data",
+          "bom-ref": "lvgl-font-awesome",
+          "name": "Font Awesome 5 bitmap glyphs",
+          "description": "Icon font glyphs compiled into LVGL's enabled built-in fonts.",
+          "licenses": [
+            { "license": { "id": "OFL-1.1", "url": "https://github.com/lvgl/lvgl/blob/v9.5.0/scripts/built_in_font/font_license/FontAwesome5/LICENSE.txt" } }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "miniaudio",
+      "name": "miniaudio",
+      "version": "0.11.26",
+      "description": "Audio decoding and playback library fetched by CMake and statically linked.",
+      "purl": "pkg:github/mackron/miniaudio@0.11.26",
+      "licenses": [{ "expression": "Unlicense OR MIT-0" }],
+      "externalReferences": [
+        {
+          "type": "source-distribution",
+          "url": "https://codeload.github.com/mackron/miniaudio/tar.gz/refs/tags/0.11.26",
+          "hashes": [
+            { "alg": "SHA-256", "content": "838ba55a21c9142adf7b76bdc4351e5cd8b7ae128f46b25ec25f94ae9969c600" }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "type": "library",
+          "bom-ref": "miniaudio-dr-mp3",
+          "name": "dr_mp3",
+          "version": "0.7.4",
+          "description": "Embedded MP3 decoder in miniaudio, used for the intro music."
+        },
+        {
+          "type": "library",
+          "bom-ref": "miniaudio-dr-wav",
+          "name": "dr_wav",
+          "version": "0.14.6",
+          "description": "WAV codec compiled into the game through miniaudio's default codec configuration."
+        },
+        {
+          "type": "library",
+          "bom-ref": "miniaudio-dr-flac",
+          "name": "dr_flac",
+          "version": "0.13.4",
+          "description": "FLAC decoder compiled into the game through miniaudio's default codec configuration."
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "nlohmann-json",
+      "name": "nlohmann/json",
+      "version": "3.12.0",
+      "description": "Vendored header-only JSON library used for configuration and save data.",
+      "purl": "pkg:github/nlohmann/json@v3.12.0",
+      "licenses": [{ "license": { "id": "MIT" } }],
+      "hashes": [
+        { "alg": "SHA-256", "content": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63" }
+      ],
+      "properties": [
+        { "name": "ai-wars:source-path", "value": "third_party/nlohmann/json.hpp" },
+        { "name": "ai-wars:hash-basis", "value": "Git blob with LF line endings." }
+      ],
+      "components": [
+        {
+          "type": "library",
+          "bom-ref": "nlohmann-json-hedley",
+          "name": "Hedley",
+          "version": "15",
+          "description": "Compiler portability macros included in the vendored JSON header.",
+          "purl": "pkg:github/nemequ/hedley@v15",
+          "licenses": [{ "license": { "id": "CC0-1.0" } }]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "fmt",
+      "name": "fmt",
+      "version": "10.1.1",
+      "description": "Logging and formatting library. The default BSP lacks fmt headers, so CMake fetches the pinned source and links it into the game.",
+      "purl": "pkg:github/fmtlib/fmt@10.1.1",
+      "licenses": [
+        { "license": { "id": "MIT", "url": "https://github.com/fmtlib/fmt/blob/10.1.1/LICENSE.rst" } }
+      ],
+      "properties": [
+        { "name": "ai-wars:license-note", "value": "Upstream MIT terms include an optional exception for portions embedded in compiled object code." }
+      ]
+    },
+    {
+      "type": "platform",
+      "bom-ref": "cardputerzero-bsp",
+      "name": "CardputerZero BSP sysroot",
+      "version": "v0.0.4",
+      "description": "Default build-time SDK archive supplying ARM64 target headers and libraries.",
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://github.com/CardputerZero/M5CardputerZero-UserDemo/releases/download/v0.0.4/sdk_bsp.tar.gz",
+          "hashes": [
+            { "alg": "SHA-256", "content": "e51b6eb803ed08f450e459efbfe62dd0341440846f3be9d01da861fe6cfdebb0" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "freetype",
+      "name": "FreeType",
+      "version": "2.13.3",
+      "description": "Font rasterizer supplied by the BSP for compilation and by libfreetype6 on the device.",
+      "purl": "pkg:generic/freetype@2.13.3",
+      "licenses": [{ "expression": "FTL OR GPL-2.0-or-later" }],
+      "externalReferences": [
+        { "type": "vcs", "url": "https://gitlab.freedesktop.org/freetype/freetype" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "libpng",
+      "name": "libpng",
+      "version": "1.6.59",
+      "description": "Private, statically linked PNG decoder for CardputerZero.",
+      "purl": "pkg:generic/libpng@1.6.59",
+      "licenses": [{ "license": { "id": "libpng-2.0" } }],
+      "externalReferences": [
+        { "type": "website", "url": "http://www.libpng.org/pub/png/libpng.html" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "system-libpng",
+      "name": "System libpng",
+      "description": "Shared PNG library used by the device's FreeType package. The version depends on the OS image.",
+      "licenses": [{ "license": { "id": "libpng-2.0" } }]
+    },
+    {
+      "type": "library",
+      "bom-ref": "libjpeg-turbo",
+      "name": "libjpeg-turbo",
+      "version": "2.1.5",
+      "description": "The default BSP's libjpeg provider, required at configure time. The CardputerZero JPEG decoder enabled in LVGL is TJpgDec.",
+      "purl": "pkg:github/libjpeg-turbo/libjpeg-turbo@2.1.5",
+      "licenses": [{ "expression": "IJG AND BSD-3-Clause AND Zlib" }]
+    },
+    {
+      "type": "library",
+      "bom-ref": "zlib",
+      "name": "zlib",
+      "version": "1.3.1",
+      "description": "Compression library supplied by the BSP and required by libpng and FreeType.",
+      "purl": "pkg:github/madler/zlib@v1.3.1",
+      "licenses": [{ "license": { "id": "Zlib" } }]
+    },
+    {
+      "type": "library",
+      "bom-ref": "bzip2",
+      "name": "bzip2",
+      "version": "1.0.8",
+      "description": "The BSP's FreeType build uses libbz2.",
+      "purl": "pkg:generic/bzip2@1.0.8",
+      "licenses": [{ "license": { "id": "bzip2-1.0.6" } }],
+      "externalReferences": [
+        { "type": "vcs", "url": "https://gitlab.com/bzip2/bzip2" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "brotli",
+      "name": "Brotli",
+      "version": "1.1.0",
+      "description": "The BSP's FreeType build uses libbrotlidec and its shared libbrotlicommon library.",
+      "purl": "pkg:github/google/brotli@v1.1.0",
+      "licenses": [{ "license": { "id": "MIT" } }]
+    },
+    {
+      "type": "library",
+      "bom-ref": "glibc",
+      "name": "GNU C Library",
+      "version": "2.41",
+      "description": "C runtime, dynamic loader, math, pthreads and dynamic loading interfaces. The BSP provides glibc 2.41. The Debian package declares libc6 (>= 2.38).",
+      "purl": "pkg:generic/glibc@2.41",
+      "licenses": [{ "expression": "LGPL-2.1-or-later" }],
+      "externalReferences": [
+        { "type": "website", "url": "https://www.gnu.org/software/libc/" }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "libstdcxx",
+      "name": "libstdc++",
+      "description": "GNU C++ standard library. The Debian package declares libstdc++6 (>= 12).",
+      "purl": "pkg:deb/debian/libstdc%2B%2B6?arch=arm64",
+      "licenses": [{ "expression": "GPL-3.0-or-later WITH GCC-exception-3.1" }]
+    },
+    {
+      "type": "library",
+      "bom-ref": "libgcc",
+      "name": "libgcc",
+      "description": "GNU compiler support runtime supplied by the device's libgcc-s1 package.",
+      "purl": "pkg:deb/debian/libgcc-s1?arch=arm64",
+      "licenses": [{ "expression": "GPL-3.0-or-later WITH GCC-exception-3.1" }]
+    },
+    {
+      "type": "library",
+      "bom-ref": "alsa-lib",
+      "name": "alsa-lib",
+      "description": "Linux audio playback library loaded dynamically by miniaudio. The package accepts libasound2t64 or libasound2.",
+      "purl": "pkg:github/alsa-project/alsa-lib",
+      "licenses": [{ "expression": "LGPL-2.1-or-later" }]
+    },
+    {
+      "type": "data",
+      "bom-ref": "tzdata",
+      "name": "tzdata",
+      "description": "Device time zone database used to determine local arrival times.",
+      "purl": "pkg:deb/debian/tzdata"
+    },
+    {
+      "type": "file",
+      "bom-ref": "montserrat-bold",
+      "name": "Montserrat-Bold.ttf",
+      "version": "8.000",
+      "licenses": [{ "license": { "id": "OFL-1.1" } }],
+      "hashes": [
+        { "alg": "SHA-256", "content": "06a0e623bbaf4a0237f1d605affa269f9e431ff50c7143dcbb47b815edaba9bd" }
+      ],
+      "properties": [
+        { "name": "ai-wars:source-path", "value": "assets/fonts/Montserrat-Bold.ttf" },
+        { "name": "ai-wars:license-path", "value": "assets/fonts/Montserrat-OFL.txt" }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "montserrat-medium",
+      "name": "Montserrat-Medium.ttf",
+      "version": "7.200",
+      "licenses": [{ "license": { "id": "OFL-1.1" } }],
+      "hashes": [
+        { "alg": "SHA-256", "content": "421f26b23e2be6b98373d32acd3cb2897b154d4bf0a77d26534ce476e4cbed53" }
+      ],
+      "properties": [
+        { "name": "ai-wars:source-path", "value": "assets/fonts/Montserrat-Medium.ttf" },
+        { "name": "ai-wars:license-path", "value": "assets/fonts/Montserrat-OFL.txt" }
+      ]
+    },
+    {
+      "type": "file",
+      "bom-ref": "intro-music",
+      "name": "intro.mp3",
+      "description": "Bundled introduction music. Created by randombits0110.",
+      "authors": [{ "name": "randombits0110" }],
+      "licenses": [{ "license": { "id": "MIT" } }],
+      "copyright": "Copyright (c) 2026 randombits0110",
+      "hashes": [
+        { "alg": "SHA-256", "content": "1c97728dc7798c2b94f06142066433bb6a7b4423f1101ceb42672780fe494884" }
+      ],
+      "properties": [
+        { "name": "ai-wars:source-path", "value": "assets/audio/intro.mp3" },
+        { "name": "ai-wars:license-path", "value": "assets/audio/intro-LICENSE.txt" }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "ai-wars",
+      "dependsOn": [
+        "cardputerzero-bsp", "lvgl", "miniaudio", "nlohmann-json", "fmt",
+        "glibc", "libstdcxx", "libgcc", "tzdata", "montserrat-bold", "montserrat-medium", "intro-music"
+      ]
+    },
+    {
+      "ref": "lvgl",
+      "dependsOn": [
+        "lvgl-qrcodegen", "lvgl-tjpgd", "lvgl-tlsf", "lvgl-printf", "lvgl-montserrat", "lvgl-font-awesome",
+        "freetype", "libpng", "libjpeg-turbo", "zlib", "glibc"
+      ]
+    },
+    { "ref": "miniaudio", "dependsOn": ["miniaudio-dr-mp3", "miniaudio-dr-wav", "miniaudio-dr-flac", "alsa-lib", "glibc"] },
+    { "ref": "nlohmann-json", "dependsOn": ["nlohmann-json-hedley"] },
+    { "ref": "freetype", "dependsOn": ["system-libpng", "zlib", "bzip2", "brotli", "glibc"] },
+    { "ref": "libpng", "dependsOn": ["zlib", "glibc"] },
+    { "ref": "system-libpng", "dependsOn": ["zlib", "glibc"] },
+    { "ref": "libstdcxx", "dependsOn": ["glibc", "libgcc"] }
+  ],
+  "compositions": [
+    { "aggregate": "incomplete", "dependencies": ["ai-wars"] }
+  ]
+}
