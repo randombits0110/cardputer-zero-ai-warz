@@ -17,7 +17,7 @@
 
 | Main menu | Market and jacket in a short simulator test run |
 | :---: | :---: |
-| ![AI Wars main menu over a pixel-art city skyline](./docs/screenshots/main-menu.png) | ![Silicon Valley market quotes beside the jacket inventory](./docs/screenshots/market-and-jacket.png) |
+| ![AI Wars main menu over a pixel-art city skyline](/docs/screenshots/main-menu.png) | ![Silicon Valley market quotes beside the jacket inventory](/docs/screenshots/market-and-jacket.png) |
 
 ## Requirements
 
