@@ -86,29 +86,7 @@ cmake --workflow --preset cp0-cross-package
 
 Install the package from `dist/` on the Zero. For a per-user install from a source checkout, use [`scripts/install-user.sh`](scripts/install-user.sh) with the generated package.
 
-## Configuration
-
-Edit [`config/economy.json`](config/economy.json) in a source checkout or `/etc/ai-wars/economy.json` on a system-wide install. For a per-user install, set `AI_WARS_ECONOMY` to your own copy of the configuration. New runs snapshot these settings. The one-slot rule also applies to existing saves.
-
-Each ordinary price headline has a 5% chance to become a market-wide boom or bust. It applies the same full price multiplier to every available commodity in that arrival's market, including extreme swings, within the existing price limits. The next trip generates prices normally. These events use larger, bold titles and dedicated stories. Configure their odds with `market_wide_news.chance_basis_points` (`500` is 5%, `0` disables them, `10000` always expands price headlines) and edit the `up` and `down` title/text lists in the economy file. Existing saves without these rules retain single-commodity news.
-
-Boom/bust headline selection favors commodities with a configured minimum price of $4,000 or less on days 1–10, then $4,000 or more from day 11 onward. Favored headlines receive 15% more selection weight (115 versus 100 for otherwise equal headlines), for both price directions. A minimum of exactly $4,000 qualifies in both phases. This does not change arrival-event odds, price-swing sizes, city availability, or the chance of expanding news to the whole market. Tune `price_news_skew.early_days`, `minimum_price_threshold`, and `bonus_percent` in the economy file; `bonus_percent` accepts 0–100, with 0 disabling the skew. Existing saves without these settings retain their original selection rules.
-
-On CardputerZero, profiles live under `$XDG_STATE_HOME/ai-wars` or `~/.local/state/ai-wars`. If a saved profile is invalid, the game archives it in a `profile-recovery` directory next to the profile and uses the last available valid backup.
-
-| Environment variable | Purpose |
-| --- | --- |
-| `AI_WARS_ECONOMY` | Use a different economy JSON file. |
-| `AI_WARS_STATE_DIR` | Store the save and leaderboard in a different directory. |
-| `AI_WARS_SCREENSHOT_DIR` | Save screenshots to a different directory. |
-| `LV_LINUX_FBDEV_DEVICE` | Override the framebuffer device on CardputerZero. |
-
 ## Contributing
-
-For repeatable commodity balance experiments, run `python scripts/test-balance.py`.
-It builds a small runner using the current game rules and writes profit, commodity,
-and market-opportunity reports without opening the game. See the
-[balance testing guide](scripts/balance/README.md) for seeds, strategies, and interpretation.
 
 Report bugs and suggest improvements in [GitHub Issues](https://github.com/randombits0110/cardputer-zero-ai-warz/issues). Include your platform, game version or commit, and steps to reproduce a bug. For code, balance, or documentation changes, fork the repository and open a [pull request](https://github.com/randombits0110/cardputer-zero-ai-warz/pulls) describing the change and how you checked it.
 
